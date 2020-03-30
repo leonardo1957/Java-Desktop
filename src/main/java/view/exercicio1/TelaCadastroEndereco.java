@@ -141,7 +141,7 @@ public class TelaCadastroEndereco extends JFrame {
 		cbSiglaEstado.setBounds(330, 70, 110, 27);
 		contentPane.add(cbSiglaEstado);
 
-		JLabel lblCamposObrigatorios = new JLabel("(*) campos obrigatórios");
+		JLabel lblCamposObrigatorios = new JLabel("(*) campos obrigatórios, favor selecinar corretamente");
 		lblCamposObrigatorios.setFont(new Font("Lucida Grande", Font.ITALIC, 11));
 		lblCamposObrigatorios.setBounds(20, 164, 200, 16);
 		contentPane.add(lblCamposObrigatorios);
@@ -193,7 +193,6 @@ public class TelaCadastroEndereco extends JFrame {
 		siglasEstados.add("TO"); 
 		
 		
-
 		// mais para frente, deixar isso escondido no backend ouuu nao deixar setado (preferencial)
 
 		return siglasEstados;
