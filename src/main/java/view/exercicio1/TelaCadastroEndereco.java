@@ -124,8 +124,8 @@ public class TelaCadastroEndereco extends JFrame {
 		txtNumero.setColumns(10);
 
 		// O campo está sem máscara
-		try {  // dentro de try catch pq o componente Jformatterdtextdfield pode dar errro na chamada
-			MaskFormatter mascaraCep = new MaskFormatter("#####-###"); // # é numero e A é letra 
+		try {
+			MaskFormatter mascaraCep = new MaskFormatter("#####-###");
 
 			txtCep = new JFormattedTextField(mascaraCep);
 			txtCep.setBounds(330, 40, 110, 28);
@@ -136,12 +136,12 @@ public class TelaCadastroEndereco extends JFrame {
 			e.printStackTrace();
 		}
 
-		ArrayList<String> siglasEstados = consultarEstados(); // criando lista para selecinar a UF dos estados 
+		ArrayList<String> siglasEstados = consultarEstados();
 		cbSiglaEstado = new JComboBox(siglasEstados.toArray());
 		cbSiglaEstado.setBounds(330, 70, 110, 27);
 		contentPane.add(cbSiglaEstado);
 
-		JLabel lblCamposObrigatorios = new JLabel("(*) campos obrigatórios, favor selecinar corretamente");
+		JLabel lblCamposObrigatorios = new JLabel("(*) campos obrigatórios");
 		lblCamposObrigatorios.setFont(new Font("Lucida Grande", Font.ITALIC, 11));
 		lblCamposObrigatorios.setBounds(20, 164, 200, 16);
 		contentPane.add(lblCamposObrigatorios);
@@ -160,40 +160,21 @@ public class TelaCadastroEndereco extends JFrame {
 		this.cbSiglaEstado.setSelectedIndex(0);
 	}
 
-	private ArrayList<String> consultarEstados() { // buscando tabela de estados no banco para uma comobox
+	private ArrayList<String> consultarEstados() {
 		// TODO o ideal é consultar numa tabela estes dados...
 
 		ArrayList<String> siglasEstados = new ArrayList<String>();
 
-		siglasEstados.add("AC"); 
-		siglasEstados.add("AL"); 
-		siglasEstados.add("AP"); 
-		siglasEstados.add("AM"); 
-		siglasEstados.add("BA"); 
-		siglasEstados.add("CE"); 
-		siglasEstados.add("DF"); 
-		siglasEstados.add("GO"); 
-		siglasEstados.add("ES"); 
-		siglasEstados.add("MA"); 
-		siglasEstados.add("MT"); 
-		siglasEstados.add("MS"); 
-		siglasEstados.add("MG"); 
-		siglasEstados.add("PA"); 
-		siglasEstados.add("PB"); 
-		siglasEstados.add("PR"); 
-		siglasEstados.add("PE"); 
-		siglasEstados.add("PI"); 
-		siglasEstados.add("RJ"); 
-		siglasEstados.add("RN"); 
-		siglasEstados.add("RS"); 
-		siglasEstados.add("RO"); 
-		siglasEstados.add("SC"); 
-		siglasEstados.add("SP"); 
-		siglasEstados.add("SE"); 
-		siglasEstados.add("TO"); 
-		
-		
-		// mais para frente, deixar isso escondido no backend ouuu nao deixar setado (preferencial)
+		siglasEstados.add("AC");
+		siglasEstados.add("BA");
+		siglasEstados.add("CE");
+		siglasEstados.add("DF");
+		siglasEstados.add("GO");
+		siglasEstados.add("PR");
+		siglasEstados.add("SC");
+		siglasEstados.add("RS");
+
+		// e assim por diante...
 
 		return siglasEstados;
 	}
