@@ -1,5 +1,3 @@
-//aula segunda
-
 package view.exercicio1;
 
 import java.awt.EventQueue;
