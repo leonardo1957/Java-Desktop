@@ -82,22 +82,22 @@ public class TelaCadastroTelefone extends JFrame {
 		contentPane.add(lblCadastroDeTelefone);
 
 		lblDdd = new JLabel("DDD:");
-		lblDdd.setBounds(68, 80, 56, 16);
+		lblDdd.setBounds(184, 48, 56, 16);
 		contentPane.add(lblDdd);
 
 		lblCdigoPas = new JLabel("C\u00F3digo Pa\u00EDs:");
-		lblCdigoPas.setBounds(68, 48, 78, 16);
+		lblCdigoPas.setBounds(38, 48, 78, 16);
 		contentPane.add(lblCdigoPas);
 
 		lblNumero = new JLabel("Numero:");
-		lblNumero.setBounds(68, 158, 56, 16);
+		lblNumero.setBounds(306, 48, 56, 16);
 		contentPane.add(lblNumero);
 
 		MaskFormatter formatoDDD;
 		try {
 			formatoDDD = new MaskFormatter("##");
 			txtFormtDdd = new JFormattedTextField(formatoDDD);
-			txtFormtDdd.setBounds(108, 77, 56, 22);
+			txtFormtDdd.setBounds(222, 45, 56, 22);
 			contentPane.add(txtFormtDdd);
 		} catch (ParseException e) {
 			e.getMessage();
@@ -107,7 +107,7 @@ public class TelaCadastroTelefone extends JFrame {
 		try {
 			formatoCodPais = new MaskFormatter("##");
 			txtFormCodPais = new JFormattedTextField(formatoCodPais);
-			txtFormCodPais.setBounds(144, 45, 56, 22);
+			txtFormCodPais.setBounds(108, 47, 56, 22);
 			contentPane.add(txtFormCodPais);
 		} catch (ParseException e) {
 			e.getMessage();
@@ -117,26 +117,26 @@ public class TelaCadastroTelefone extends JFrame {
 		try {
 			formatoNumero = new MaskFormatter("#####-####");
 			txtFormNumero = new JFormattedTextField(formatoNumero);
-			txtFormNumero.setBounds(127, 158, 90, 22);
+			txtFormNumero.setBounds(358, 45, 90, 22);
 			contentPane.add(txtFormNumero);
 		} catch (ParseException e) {
 			e.getMessage();
 		}
 
 		rdbtnMovel = new JRadioButton("M\u00F3vel");
-		rdbtnMovel.setBounds(68, 112, 73, 25);
+		rdbtnMovel.setBounds(38, 98, 73, 25);
 		contentPane.add(rdbtnMovel);
 
 		rdbtnFixo = new JRadioButton("Fixo");
-		rdbtnFixo.setBounds(156, 112, 61, 25);
+		rdbtnFixo.setBounds(103, 98, 61, 25);
 		contentPane.add(rdbtnFixo);
 
 		rdbtnAtivo = new JRadioButton("Ativo");
-		rdbtnAtivo.setBounds(68, 202, 56, 25);
+		rdbtnAtivo.setBounds(38, 140, 56, 25);
 		contentPane.add(rdbtnAtivo);
 
 		rdbtnInativo = new JRadioButton("Inativo");
-		rdbtnInativo.setBounds(144, 202, 78, 25);
+		rdbtnInativo.setBounds(97, 140, 78, 25);
 		contentPane.add(rdbtnInativo);
 
 		buttonGroup1 = new javax.swing.ButtonGroup();
@@ -148,12 +148,12 @@ public class TelaCadastroTelefone extends JFrame {
 		buttonGroup2.add(rdbtnFixo);
 
 		lblCliente = new JLabel("Cliente:");
-		lblCliente.setBounds(68, 252, 56, 16);
+		lblCliente.setBounds(38, 218, 56, 16);
 		contentPane.add(lblCliente);
 
 		clientes = clienteController.consultarTodos();
 		cbCliente = new JComboBox(clientes.toArray());
-		cbCliente.setBounds(127, 249, 161, 22);
+		cbCliente.setBounds(80, 215, 161, 22);
 		contentPane.add(cbCliente);
 		cbCliente.setSelectedIndex(-1);
 
@@ -197,7 +197,7 @@ public class TelaCadastroTelefone extends JFrame {
 
 			}
 		});
-		btnCadastrar.setBounds(413, 279, 97, 25);
+		btnCadastrar.setBounds(222, 301, 97, 25);
 		contentPane.add(btnCadastrar);
 
 	}

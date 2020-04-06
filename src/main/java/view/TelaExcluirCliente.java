@@ -60,17 +60,17 @@ public class TelaExcluirCliente extends JFrame {
 		contentPane.setLayout(null);
 
 		lblSelecioneOCliente = new JLabel("Selecione o Cliente:");
-		lblSelecioneOCliente.setBounds(26, 47, 114, 16);
+		lblSelecioneOCliente.setBounds(22, 80, 114, 16);
 		contentPane.add(lblSelecioneOCliente);
 
 		lblExcluirClientes = new JLabel("Excluir Clientes");
 		lblExcluirClientes.setFont(new Font("Tahoma", Font.BOLD, 18));
-		lblExcluirClientes.setBounds(233, 13, 139, 16);
+		lblExcluirClientes.setBounds(194, 17, 139, 16);
 		contentPane.add(lblExcluirClientes);
 
 		clientes = clienteController.consultarTodos();
 		cbClientes = new JComboBox(clientes.toArray());
-		cbClientes.setBounds(152, 44, 186, 22);
+		cbClientes.setBounds(146, 77, 186, 22);
 		contentPane.add(cbClientes);
 		cbClientes.setSelectedIndex(-1);
 
@@ -86,7 +86,7 @@ public class TelaExcluirCliente extends JFrame {
 				JOptionPane.showMessageDialog(null, msg);
 			}
 		});
-		btnExcluir.setBounds(290, 112, 97, 25);
+		btnExcluir.setBounds(233, 145, 97, 25);
 		contentPane.add(btnExcluir);
 	}
 }
