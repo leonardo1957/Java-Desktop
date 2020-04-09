@@ -128,7 +128,13 @@ public class TelaCadastroCliente extends JFrame {
 		});
 		btnCadastrar.setBounds(216, 214, 97, 25);
 		contentPane.add(btnCadastrar);
+		
+		
+		// botao sem funcionar para limpar dados cadastrados
+		
+		JButton btnNewButton = new JButton("Limpar");
+		btnNewButton.setBounds(60, 215, 89, 23);
+		contentPane.add(btnNewButton);
 
 	}
-
 }

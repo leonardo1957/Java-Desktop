@@ -103,7 +103,7 @@ public class TelaCadastroTelefone extends JFrame {
 			e.getMessage();
 		}
 
-		MaskFormatter formatoCodPais;
+		 MaskFormatter formatoCodPais;
 		try {
 			formatoCodPais = new MaskFormatter("##");
 			txtFormCodPais = new JFormattedTextField(formatoCodPais);

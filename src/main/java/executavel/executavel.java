@@ -95,25 +95,25 @@ public class executavel {
 //		return tel;
 //	}
 
-//	private static Cliente obterClienteDaTela() {
-//		String nome = JOptionPane.showInputDialog("Informe o nome");
-//		String sobrenome = JOptionPane.showInputDialog("Informe o sobrenome");
-//		String cpf = JOptionPane.showInputDialog("Informe o CPF");
-//
-//		EnderecoDAO endDAO = new EnderecoDAO();
-//		TelefoneDAO telDAO = new TelefoneDAO();
-//		ArrayList<Endereco> listaEnderecos = endDAO.consultarTodos();
-//		ArrayList<Telefone> telefones = telDAO.consultarTodos();
-//
-//		Object[] enderecos = listaEnderecos.toArray();
-//		Endereco enderecoSelecionado = (Endereco) JOptionPane.showInputDialog(null, "Selecione um endereço", "Endereço",
-//				JOptionPane.QUESTION_MESSAGE, null, enderecos, null);
-//
-//		Cliente novoCliente = new Cliente();
-//		novoCliente.setNome(nome);
-//		novoCliente.setSobrenome(sobrenome);
-//		novoCliente.setCpf(cpf);
-//		return novoCliente;
-//	}
+	
+	private static Cliente obterClienteDaTela() {
+	String nome = JOptionPane.showInputDialog("Informe o nome");
+	String sobrenome = JOptionPane.showInputDialog("Informe o sobrenome");
+	String cpf = JOptionPane.showInputDialog("Informe o CPF");
+		EnderecoDAO endDAO = new EnderecoDAO();
+		TelefoneDAO telDAO = new TelefoneDAO();
+		ArrayList<Endereco> listaEnderecos = endDAO.consultarTodos();
+	ArrayList<Telefone> telefones = telDAO.consultarTodos();
+
+		Object[] enderecos = listaEnderecos.toArray();
+		Endereco enderecoSelecionado = (Endereco) JOptionPane.showInputDialog(null, "Selecione um endereço", "Endereço",
+				JOptionPane.QUESTION_MESSAGE, null, enderecos, null);
+
+		Cliente novoCliente = new Cliente();
+		novoCliente.setNome(nome);
+		novoCliente.setSobrenome(sobrenome);
+		novoCliente.setCpf(cpf);
+		return novoCliente;
+	}
 
 }
