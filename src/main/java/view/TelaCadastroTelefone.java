@@ -199,6 +199,10 @@ public class TelaCadastroTelefone extends JFrame {
 		});
 		btnCadastrar.setBounds(222, 301, 97, 25);
 		contentPane.add(btnCadastrar);
+		
+		JButton btnNewButton = new JButton("FABIO GOSTOSO");
+		btnNewButton.setBounds(103, 302, 89, 23);
+		contentPane.add(btnNewButton);
 
 	}
 }
