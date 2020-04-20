@@ -15,7 +15,7 @@ public class ClienteBO {
 	public String verificaCpf(Cliente cliente2) {
 		cliente = clienteDAO.verificaCPF(cliente2);
 		if (cliente != null) {
-			msg = " Este cliente j√° existe. ";
+			msg = " Este cliente j· existe. ";
 		} else {
 			cliente = clienteDAO.salvar(cliente2);
 			if (cliente != null) {

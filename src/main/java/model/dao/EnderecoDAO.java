@@ -23,7 +23,7 @@ public class EnderecoDAO implements BaseDAO<Endereco> {
 			stmt.executeUpdate(sql, Statement.RETURN_GENERATED_KEYS);
 
 		} catch (SQLException e) {
-			System.out.println(" Erro ao salvar endereÃ§o. Erro: " + e.getMessage());
+			System.out.println(" Erro ao salvar endereço. Erro: " + e.getMessage());
 		}
 		return novaEntidade;
 	}
@@ -72,7 +72,7 @@ public class EnderecoDAO implements BaseDAO<Endereco> {
 				enderecoConsultado = construirResultSet(resultado);
 			}
 		} catch (SQLException e) {
-			System.out.println("Erro ao consultar endereÃ§o. id:" + id + "Causa:" + e.getMessage());
+			System.out.println("Erro ao consultar endereço. id:" + id + "Causa:" + e.getMessage());
 		}
 		return enderecoConsultado;
 	}
@@ -87,7 +87,7 @@ public class EnderecoDAO implements BaseDAO<Endereco> {
 			endereco.setEstado(resultado.getString("estado"));
 			endereco.setRua(resultado.getString("rua"));
 		} catch (SQLException e) {
-			System.out.println("Erro ao consultar endereÃ§os. Causa:" + e.getMessage());
+			System.out.println("Erro ao consultar endereços. Causa:" + e.getMessage());
 		}
 		return endereco;
 	}

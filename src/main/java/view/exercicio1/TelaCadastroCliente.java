@@ -1,4 +1,4 @@
-package view;
+package view.exercicio1;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -73,39 +73,39 @@ public class TelaCadastroCliente extends JFrame {
 		contentPane.add(lblCadastroDeCliente);
 
 		lblNome = new JLabel("Nome:");
-		lblNome.setBounds(38, 49, 56, 16);
+		lblNome.setBounds(67, 63, 56, 16);
 		contentPane.add(lblNome);
 
 		lblSobrenome = new JLabel("Sobrenome:");
-		lblSobrenome.setBounds(232, 49, 81, 16);
+		lblSobrenome.setBounds(67, 103, 81, 16);
 		contentPane.add(lblSobrenome);
 
 		lblCpf = new JLabel("CPF:");
-		lblCpf.setBounds(38, 90, 56, 16);
+		lblCpf.setBounds(67, 135, 56, 16);
 		contentPane.add(lblCpf);
 
 		lblEndereco = new JLabel("Endere\u00E7o:");
-		lblEndereco.setBounds(38, 152, 81, 16);
+		lblEndereco.setBounds(67, 167, 81, 16);
 		contentPane.add(lblEndereco);
 
 		txtNome = new JTextField();
-		txtNome.setBounds(82, 46, 116, 22);
+		txtNome.setBounds(116, 60, 116, 22);
 		contentPane.add(txtNome);
 		txtNome.setColumns(10);
 
 		txtSobrenome = new JTextField();
-		txtSobrenome.setBounds(309, 46, 116, 22);
+		txtSobrenome.setBounds(148, 100, 116, 22);
 		contentPane.add(txtSobrenome);
 		txtSobrenome.setColumns(10);
 
 		txtCpf = new JTextField();
-		txtCpf.setBounds(82, 87, 116, 22);
+		txtCpf.setBounds(104, 132, 116, 22);
 		contentPane.add(txtCpf);
 		txtCpf.setColumns(10);
 
 		enderecos = enderecoController.consultarTodos();
 		cbEndereco = new JComboBox(enderecos.toArray());
-		cbEndereco.setBounds(89, 149, 272, 22);
+		cbEndereco.setBounds(140, 164, 272, 22);
 		contentPane.add(cbEndereco);
 		cbEndereco.setSelectedIndex(-1);
 
@@ -126,15 +126,9 @@ public class TelaCadastroCliente extends JFrame {
 				JOptionPane.showMessageDialog(null, msg);
 			}
 		});
-		btnCadastrar.setBounds(216, 214, 97, 25);
+		btnCadastrar.setBounds(374, 209, 97, 25);
 		contentPane.add(btnCadastrar);
-		
-		
-		// botao sem funcionar para limpar dados cadastrados
-		
-		JButton btnNewButton = new JButton("Limpar");
-		btnNewButton.setBounds(60, 215, 89, 23);
-		contentPane.add(btnNewButton);
 
 	}
+
 }

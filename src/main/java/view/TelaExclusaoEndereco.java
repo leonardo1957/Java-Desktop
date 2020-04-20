@@ -52,11 +52,11 @@ public class TelaExclusaoEndereco {
 		frmExclusaoDeEndereos.getContentPane().setLayout(null);
 
 		JLabel lblInformeId = new JLabel("Informe o id:");
-		lblInformeId.setBounds(24, 69, 75, 16);
+		lblInformeId.setBounds(36, 31, 75, 16);
 		frmExclusaoDeEndereos.getContentPane().add(lblInformeId);
 
 		txtIdEndereco = new JTextField();
-		txtIdEndereco.setBounds(97, 66, 116, 22);
+		txtIdEndereco.setBounds(114, 28, 116, 22);
 		frmExclusaoDeEndereos.getContentPane().add(txtIdEndereco);
 		txtIdEndereco.setColumns(10);
 

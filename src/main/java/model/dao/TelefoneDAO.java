@@ -86,7 +86,7 @@ public class TelefoneDAO {
 	/**
 	 * Desativa todos os telefones de um determinado cliente.
 	 * 
-	 * @param idCliente a chave prim√°ria do cliente
+	 * @param idCliente a chave prim·ria do cliente
 	 */
 	public void desativarTelefones(int idCliente) {
 		Connection conn = Banco.getConnection();
@@ -202,9 +202,9 @@ public class TelefoneDAO {
 
 	/**
 	 * 
-	 * Constr√≥i um objeto do tipo Telefone a partir de um registro do resultSet
+	 * ConstrÛi um objeto do tipo Telefone a partir de um registro do resultSet
 	 * 
-	 * @param resultadoDaConsulta o item do resultSet (isto √©, um registro da tabela
+	 * @param resultadoDaConsulta o item do resultSet (isto È, um registro da tabela
 	 *                            Telefone)
 	 * @return um objeto do tipo Telefone
 	 * 
@@ -245,7 +245,7 @@ public class TelefoneDAO {
 			telefoneJaCadastrado = rs.next();
 
 		} catch (SQLException e) {
-			System.out.println("Erro ao verificar se telefone j√° est√° cadastrado " + novoTelefone);
+			System.out.println("Erro ao verificar se telefone j· est· cadastrado " + novoTelefone);
 			System.out.println("Causa: " + e.getMessage());
 		} finally {
 			Banco.closeResultSet(rs);

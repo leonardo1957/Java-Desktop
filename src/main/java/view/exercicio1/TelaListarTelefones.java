@@ -1,4 +1,4 @@
-package view;
+package view.exercicio1;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -29,7 +29,7 @@ public class TelaListarTelefones extends JFrame {
 	private ArrayList<Cliente> clientes;
 	private ArrayList<Telefone> telefones;
 	private ArrayList<Telefone> telefonesList;
-	private String[] colunasTabelaPecas = { "Id", "CÃ³digo do PaÃ­s", "Ddd", "NÃºmero", "MÃ³vel", "Ativo", "Dono" };
+	private String[] colunasTabelaPecas = { "Id", "Código do País", "Ddd", "Número", "Móvel", "Ativo", "Dono" };
 	private String msg = "";
 	private JPanel contentPane;
 	private JTable tblTelefone;

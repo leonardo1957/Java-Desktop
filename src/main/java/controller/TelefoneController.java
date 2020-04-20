@@ -13,7 +13,7 @@ public class TelefoneController {
 
 	public String validarCampos(String codPais, String ddd, String numero) {
 		if (codPais.trim().isEmpty()) {
-			msg += " Digite o codigo do paÃ­s. ";
+			msg += " Digite o codigo do país. ";
 		}
 		if (ddd.trim().isEmpty()) {
 			msg += " Digite o ddd. ";

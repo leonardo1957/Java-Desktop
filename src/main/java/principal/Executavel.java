@@ -1,4 +1,4 @@
-package executavel;
+package principal;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import model.entity.Cliente;
 import model.entity.Endereco;
 import model.entity.Telefone;
 
-public class executavel {
+public class Executavel {
 
 	public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class executavel {
 		String ddd = (String) JOptionPane.showInputDialog("Digite o ddd");
 		String codPais = (String) JOptionPane.showInputDialog("Digite o codigo do pais");
 		String numeroTel = JOptionPane.showInputDialog("Digite o numero do telefone");
-		int movel = JOptionPane.showConfirmDialog(null, "Ã‰ mÃ³vel?");
+		int movel = JOptionPane.showConfirmDialog(null, "É móvel?");
 		int temCliente = JOptionPane.showConfirmDialog(null, "Tem um cliente associado?");
 		boolean isMovel;
 		
@@ -77,7 +77,7 @@ public class executavel {
 //		String ddd = (String) JOptionPane.showInputDialog("Digite o ddd");
 //		String codPais = (String) JOptionPane.showInputDialog("Digite o codigo do pais");
 //		String numeroTel = JOptionPane.showInputDialog("Digite o numero do telefone");
-//		int movel = JOptionPane.showConfirmDialog(null, "Ã‰ mÃ³vel?");
+//		int movel = JOptionPane.showConfirmDialog(null, "É móvel?");
 //		boolean isMovel;
 //		if (movel == JOptionPane.OK_OPTION) {
 //			isMovel = true;
@@ -95,25 +95,25 @@ public class executavel {
 //		return tel;
 //	}
 
-	
-	private static Cliente obterClienteDaTela() {
-	String nome = JOptionPane.showInputDialog("Informe o nome");
-	String sobrenome = JOptionPane.showInputDialog("Informe o sobrenome");
-	String cpf = JOptionPane.showInputDialog("Informe o CPF");
-		EnderecoDAO endDAO = new EnderecoDAO();
-		TelefoneDAO telDAO = new TelefoneDAO();
-		ArrayList<Endereco> listaEnderecos = endDAO.consultarTodos();
-	ArrayList<Telefone> telefones = telDAO.consultarTodos();
-
-		Object[] enderecos = listaEnderecos.toArray();
-		Endereco enderecoSelecionado = (Endereco) JOptionPane.showInputDialog(null, "Selecione um endereÃ§o", "EndereÃ§o",
-				JOptionPane.QUESTION_MESSAGE, null, enderecos, null);
-
-		Cliente novoCliente = new Cliente();
-		novoCliente.setNome(nome);
-		novoCliente.setSobrenome(sobrenome);
-		novoCliente.setCpf(cpf);
-		return novoCliente;
-	}
+//	private static Cliente obterClienteDaTela() {
+//		String nome = JOptionPane.showInputDialog("Informe o nome");
+//		String sobrenome = JOptionPane.showInputDialog("Informe o sobrenome");
+//		String cpf = JOptionPane.showInputDialog("Informe o CPF");
+//
+//		EnderecoDAO endDAO = new EnderecoDAO();
+//		TelefoneDAO telDAO = new TelefoneDAO();
+//		ArrayList<Endereco> listaEnderecos = endDAO.consultarTodos();
+//		ArrayList<Telefone> telefones = telDAO.consultarTodos();
+//
+//		Object[] enderecos = listaEnderecos.toArray();
+//		Endereco enderecoSelecionado = (Endereco) JOptionPane.showInputDialog(null, "Selecione um endereço", "Endereço",
+//				JOptionPane.QUESTION_MESSAGE, null, enderecos, null);
+//
+//		Cliente novoCliente = new Cliente();
+//		novoCliente.setNome(nome);
+//		novoCliente.setSobrenome(sobrenome);
+//		novoCliente.setCpf(cpf);
+//		return novoCliente;
+//	}
 
 }

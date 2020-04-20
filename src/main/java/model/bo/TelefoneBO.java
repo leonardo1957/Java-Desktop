@@ -18,7 +18,7 @@ public class TelefoneBO {
 		if (telefone != null) {
 			msg = " Telefone salvo com sucesso. ";
 		} else {
-			msg = " Ocorreu um erro, o telefone n√£o foi salvo. ";
+			msg = " Ocorreu um erro, o telefone n„o foi salvo. ";
 		}
 		return msg;
 	}
