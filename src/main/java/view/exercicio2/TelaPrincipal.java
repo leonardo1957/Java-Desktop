@@ -61,6 +61,24 @@ public class TelaPrincipal extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setBackground(Color.LIGHT_GRAY);
 		setJMenuBar(menuBar);
+		
+				JMenu mnListar = new JMenu("Listar");
+				mnListar.setIcon(new ImageIcon(TelaPrincipal.class.getResource("/icones/Documents-icon.png")));
+				menuBar.add(mnListar);
+				
+						JMenuItem mntmTelefone4 = new JMenuItem("Telefone");
+						mntmTelefone4.addActionListener(new ActionListener() {
+							public void actionPerformed(ActionEvent e) {
+
+								if (internalFrameListarTelefones == null) {
+									internalFrameListarTelefones = new InternalFrameListarTelefones();
+								}
+
+								abrir(internalFrameListarTelefones);
+
+							}
+						});
+						mnListar.add(mntmTelefone4);
 
 		JMenu mnCadastrar = new JMenu("Cadastrar");
 		mnCadastrar.setIcon(new ImageIcon(TelaPrincipal.class.getResource("/icones/icons8-adicionar-48.png")));
@@ -113,24 +131,6 @@ public class TelaPrincipal extends JFrame {
 			}
 		});
 		mnExcluir.add(mntmTelefone3);
-
-		JMenu mnListar = new JMenu("Listar");
-		mnListar.setIcon(new ImageIcon(TelaPrincipal.class.getResource("/icones/Documents-icon.png")));
-		menuBar.add(mnListar);
-
-		JMenuItem mntmTelefone4 = new JMenuItem("Telefone");
-		mntmTelefone4.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-
-				if (internalFrameListarTelefones == null) {
-					internalFrameListarTelefones = new InternalFrameListarTelefones();
-				}
-
-				abrir(internalFrameListarTelefones);
-
-			}
-		});
-		mnListar.add(mntmTelefone4);
 
 		JMenu mnSobre = new JMenu("Sobre");
 		mnSobre.setIcon(new ImageIcon(TelaPrincipal.class.getResource("/icones/Help-icon.png")));

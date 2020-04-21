@@ -46,7 +46,7 @@ public class InternalFrameCadastrarTelefone extends JInternalFrame {
 		getContentPane().add(lblCadastroTelefones);
 
 		JLabel lblCodigoPais = new JLabel("C\u00F3digo Pa\u00EDs:");
-		lblCodigoPais.setBounds(65, 48, 78, 16);
+		lblCodigoPais.setBounds(60, 48, 78, 16);
 		getContentPane().add(lblCodigoPais);
 
 		JFormattedTextField txtCodigoPais = new JFormattedTextField((AbstractFormatter) null);
@@ -54,11 +54,11 @@ public class InternalFrameCadastrarTelefone extends JInternalFrame {
 		getContentPane().add(txtCodigoPais);
 
 		JFormattedTextField txtDDD = new JFormattedTextField((AbstractFormatter) null);
-		txtDDD.setBounds(105, 77, 56, 22);
+		txtDDD.setBounds(141, 78, 56, 22);
 		getContentPane().add(txtDDD);
 
 		JLabel lblDDD = new JLabel("DDD:");
-		lblDDD.setBounds(65, 80, 56, 16);
+		lblDDD.setBounds(82, 81, 56, 16);
 		getContentPane().add(lblDDD);
 
 		JRadioButton rbMovel = new JRadioButton("M\u00F3vel");
@@ -78,24 +78,24 @@ public class InternalFrameCadastrarTelefone extends JInternalFrame {
 		getContentPane().add(lblNumero);
 
 		JRadioButton rbAtivo = new JRadioButton("Ativo");
-		rbAtivo.setBounds(65, 202, 56, 25);
+		rbAtivo.setBounds(60, 202, 56, 25);
 		getContentPane().add(rbAtivo);
 
 		JRadioButton rbInativo = new JRadioButton("Inativo");
-		rbInativo.setBounds(141, 202, 78, 25);
+		rbInativo.setBounds(60, 230, 78, 25);
 		getContentPane().add(rbInativo);
 
 		JLabel lblCliente = new JLabel("Cliente:");
-		lblCliente.setBounds(65, 252, 56, 16);
+		lblCliente.setBounds(348, 80, 56, 16);
 		getContentPane().add(lblCliente);
 
 		JComboBox cbCliente = new JComboBox(new Object[] {});
 		cbCliente.setSelectedIndex(-1);
-		cbCliente.setBounds(124, 249, 161, 22);
+		cbCliente.setBounds(395, 77, 161, 22);
 		getContentPane().add(cbCliente);
 
 		JButton btnCadastrar = new JButton("Cadastrar");
-		btnCadastrar.setBounds(410, 279, 97, 25);
+		btnCadastrar.setBounds(235, 319, 97, 25);
 		getContentPane().add(btnCadastrar);
 
 	}
