@@ -43,7 +43,7 @@ public class Autor extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 
-		JLabel lblDemetrio = new JLabel("Demetrio");
+		JLabel lblDemetrio = new JLabel("Leonardo Vieira - Senac 2020 Desenvolvimento Desktop");
 		lblDemetrio.setFont(new Font("Tahoma", Font.BOLD, 16));
 		contentPane.add(lblDemetrio, BorderLayout.NORTH);
 	}
