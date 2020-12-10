@@ -93,7 +93,7 @@ public class TelaListarTelefones extends JFrame {
 		cbTelefone.setSelectedIndex(-1);
 
 		tblTelefone = new JTable();
-		tblTelefone.setBounds(67, 107, 620, 270);
+		tblTelefone.setBounds(67, 105, 620, 270);
 		contentPane.add(tblTelefone);
 
 		limparTabela();
